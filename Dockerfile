@@ -9,8 +9,7 @@ COPY requirements.txt .
 ENV APP_NAME=docker-practice
 RUN pip install -r requirements.txt 
 COPY app.py . 
-RUN chown -R appuser:appuser /
-app
+RUN chown -R appuser:appuser /app
 RUN apt-get update && apt-get install curl -y \
 && apt-get install git -y \
 && apt-get  install jq -y 
