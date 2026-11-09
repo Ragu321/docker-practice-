@@ -1,6 +1,5 @@
 ARG PYTHON_VERSION=3.11
 FROM python:${PYTHON_VERSION}
-ARG 
 WORKDIR /app
 COPY requirements.txt . 
 ENV APP_NAME=docker-practice
